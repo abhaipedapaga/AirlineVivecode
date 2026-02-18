@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import healthRoutes from './routes/health.js';
 import flightRoutes from './routes/flights.js';
 import bookingRoutes from './routes/bookings.js';
+import seatRoutes from './routes/seats.js';
 
 
 dotenv.config();
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use(healthRoutes);
 app.use(flightRoutes);
 app.use(bookingRoutes);
+app.use(seatRoutes);
 
 
 

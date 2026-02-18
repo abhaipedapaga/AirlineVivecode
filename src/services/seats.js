@@ -1,6 +1,6 @@
 import { apiGet } from './api';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 export function getSeatMap(flightId) {
   return apiGet(`/flights/${flightId}/seats`);
